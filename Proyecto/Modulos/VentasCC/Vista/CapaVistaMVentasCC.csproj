@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88A7AA6C-BE3C-435D-80ED-2E9386417BA4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaVistaMVentasCC</RootNamespace>
+    <AssemblyName>CapaVistaMVentasCC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CapaControladorMVentasCC">
+      <HintPath>..\CapaControladorMVentasCC\bin\Debug\CapaControladorMVentasCC.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaVistaSeguridadHSC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>G:\Respaldo quitan entrega\Seguridad\SeguridadHSC\CapaVista\bin\Debug\CapaVistaSeguridadHSC.dll</HintPath>
+    </Reference>
+    <Reference Include="DLLnav">
+      <HintPath>..\..\..\ProyectoHSC\Componentes\Navegador\DLLnav\DLLnav\bin\Debug\DLLnav.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmMantenimientoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoCliente.Designer.cs">
+      <DependentUpon>frmMantenimientoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimientoFraccionamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoFraccionamiento.Designer.cs">
+      <DependentUpon>frmMantenimientoFraccionamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimientoInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoInventario.Designer.cs">
+      <DependentUpon>frmMantenimientoInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimientoMora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoMora.Designer.cs">
+      <DependentUpon>frmMantenimientoMora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimientoTipoDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoTipoDocumento.Designer.cs">
+      <DependentUpon>frmMantenimientoTipoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimientoTipoInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoTipoInventario.Designer.cs">
+      <DependentUpon>frmMantenimientoTipoInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIVentas.Designer.cs">
+      <DependentUpon>MDIVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Recursos\90 Simple Backgrounds Edit and Download Visual Learning Center.jpg" />
+    <Content Include="Recursos\fondo ventas.jpg" />
+    <Content Include="Recursos\pinpng.com-icono-de-telefono-png-1284803.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmMantenimientoCliente.resx">
+      <DependentUpon>frmMantenimientoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoFraccionamiento.resx">
+      <DependentUpon>frmMantenimientoFraccionamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoInventario.resx">
+      <DependentUpon>frmMantenimientoInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoMora.resx">
+      <DependentUpon>frmMantenimientoMora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoTipoDocumento.resx">
+      <DependentUpon>frmMantenimientoTipoDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoTipoInventario.resx">
+      <DependentUpon>frmMantenimientoTipoInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIVentas.resx">
+      <DependentUpon>MDIVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
